@@ -1,0 +1,42 @@
+/* font  */
+@import url('https://fonts.googleapis.com/css2?family=Nova+Round&family=Poppins:wght@500&family=Ubuntu&display=swap');
+/* basic styles */
+body{
+    font-family: 'Nova Round', cursive;
+font-family: 'Poppins', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+    background-color: #FFFFFF;
+}
+
+.container{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:0 20px;
+}
+
+/* header style  */
+header{
+    padding: 10px 0px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation{
+    display: flex;
+}
+.nav-items {
+    display: flex;
+    align-items: center;
+}
+.nav-items li{
+    list-style: none;
+    padding: 0px 20px;
+}
+.search, .cart{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
