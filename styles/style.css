@@ -164,6 +164,25 @@ header .container{
     padding-bottom: 30px;
 }
 
+/* bonus section  */
+.bonus{
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-row-gap: 100px;
+    grid-column-gap: 80px;
+    
+}
+.bonus-div:hover .bonus-img{
+    transform: scale(1.1);
+    transition: transform 2s ease-in-out;
+}
+.bonus-img img{
+    width: 404px;
+    height: 270px;
+}
+
+
 /* footer area  */
 .ending{
     display: flex;
