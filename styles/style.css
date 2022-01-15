@@ -66,6 +66,8 @@ header .container{
     display: flex;
 }
 .journey-info{
+    width: 100%;
+    margin: 0 auto;
     box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0);
     border-radius: 15px;
 }
@@ -210,14 +212,35 @@ header .container{
         width: 100%;
         margin: 0 auto;
     }
-    .main-head, .logos, .journeys,  .collections{
+    .main-head, .logos, .journeys,  .collections, .bonus{
         grid-template-columns: repeat(1,1fr);
     }
    
-    .main-head, .journeys, .logos, .collections{
+    .main-head, .journeys, .logos, .collections, .bonus{
         flex-direction: column;
     }  
     .nav-items{
         display: none;
     }  
+}
+
+/* media quaries for Tab devices  */
+@media only  screen and (min-width: 688px) and (max-width: 992px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    .main-head, .logos, .journeys,   .bonus{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .collections{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .main-head, .journeys, .logos, .collections, .bonus{
+        flex-direction: column;
+    }  
+    .nav-items{
+        display: none;
+    } 
 }
