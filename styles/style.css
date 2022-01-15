@@ -5,7 +5,7 @@ body{
     font-family: 'Nova Round', cursive;
 font-family: 'Poppins', sans-serif;
 font-family: 'Ubuntu', sans-serif;
-    background-color: #FFFFFF ;
+    background-color: #f7f7f7 ;
 }
 
 main{
@@ -16,7 +16,6 @@ main{
 
 .container{
     width: 1200px;
-    padding: 30px;
     margin-top: 20px;
 }
 
@@ -61,13 +60,14 @@ header .container{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 100px;
+    grid-column-gap: 160px;
 }
 .journey{
     display: flex;
 }
 .journey-info{
-    width: 580px;
-    height: 270px;
+    box-shadow:0px 5.34229px 13.3557px rgba(0, 0, 0, 0);
+    border-radius: 15px;
 }
 .journey-h1{
     font-weight: 700px;
@@ -81,7 +81,7 @@ header .container{
 }
 .button{
     text-decoration: none;
-    background-color: blue;
+    background-color: #FF6666;
     padding: 15px 30px;
     border-radius: 41px;
     color: white;
@@ -91,9 +91,7 @@ header .container{
 .fa-arrow-right{
     margin-left: 10px;
 }
-.journey-img{
-    margin-left: 140px;
-}
+
 .journey .journey-img img{
     width: 440px;
     height: 414px;  
@@ -151,6 +149,49 @@ header .container{
     size: 14px;
 }
 .see-more{
-    text-align: right;
-    color: blue;
+    margin-top: 50px ;
+    font-weight: 700;
+    float: right;
+    color: #FF6666;
+    text-decoration: none;
+    padding-bottom: 30px;
+}
+
+/* footer area  */
+.ending{
+    display: flex;
+    background-color: #5A20CB; 
+    height: 250px;
+    /* width: 100%; */
+   
+    
+}
+.text{
+    padding-top: 50px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 50px;
+    
+}
+.text-logo{
+     word-spacing: 16px;
+}
+
+/* media quaries for mobile devices  */
+@media only screen and (max-width: 688px){
+    .container{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .main-head, .logos, .journeys,  .collections{
+        grid-template-columns: repeat(1,1fr);
+    }
+   
+    .main-head, .journeys, .logos, .collections{
+        flex-direction: column;
+    }  
+    .nav-items{
+        display: none;
+    }  
 }
